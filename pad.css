@@ -1,0 +1,380 @@
+*{
+    margin: 0;padding: 0;
+}
+a{
+    color: orange;
+}
+    /*header부분*/
+.header{/**/
+    color: white;
+    background-color: rgb(57, 4, 97);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 100;
+    width: auto;
+}
+.headleft{
+    width: 100px;height: 100px;
+    text-align: center;
+    line-height: 80px;
+    font-size: x-large; font-weight: bold;
+    left: 50px;
+    position: relative;
+}
+.headright{
+    display: flex;
+    right: 50px;
+    position: relative;
+    
+}
+.headright ul{
+    display: flex;
+}
+.headright ul li{
+    width: 100px; height: 100px; 
+    list-style: none;
+    
+}
+.headright ul li:last-child{
+    left: 30px;
+    position: relative;
+}
+.headright ul li a{
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 80px;
+}
+
+/*main*/
+.main{
+    /*border: 3px solid black;*/
+    top: 90px;
+    position: relative;
+    width: auto;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    margin-top: -20px;
+}
+/*.main h1.title{
+    border: 3px solid black;
+    position: relative;
+    text-align: center;
+    top: 60px;
+    width: 220px;
+    margin: 0 auto;
+    
+}*/
+.main .main1{
+    /*border: 3px solid black;*/
+    height: 550px;
+    width: auto;
+    margin: 0 auto;
+}
+.main1{
+    top: 60px;
+    position: relative;
+}
+.main .main1 img{  
+    width: 220px;height: 240px; 
+    top: 50%;left: 50%;
+    margin-left: -110px;margin-top: -250px;
+    position: absolute;
+    border-radius: 20% 40%; border: 3px solid black;
+    border-color: blue;
+}
+.main .main1 .introduce{
+    /*border: 3px solid black;*/
+    width: 670px;                       /*auto*/
+    position: absolute;
+    height: 240px;
+    /*
+    margin: 0 auto;
+    top: 300px;*/
+    top: 50%;
+    left: 50%;
+    margin-left: -335px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    overflow-y: scroll;
+}
+.main .main1 .introduce h1{
+    text-align: center;
+}
+
+/*밑에 글쓰기*/
+.main .introduce2{
+    width: 670px;               /*auto*/
+    position: relative;
+    height: 240px;
+    top: 80px;
+    
+    margin: 0 auto;
+    /*border: 3px solid black;*/
+    font-weight: 700;
+    font-size: 18px;
+}
+.main .button{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    margin: 0 auto;
+    top: 150px;
+    position:relative;
+    text-align: center;
+    line-height: 50px;
+    border: 7px solid orange;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.main .button a{
+    color: white;
+    text-decoration: none;
+}
+
+/*두번째 페이지*/
+.page2{
+    width: auto;
+    height: 1050px;
+    position: relative;
+    margin: 0 auto;
+    /*border: 3px solid black;*/
+    margin-top: 90px;
+    background-color: antiquewhite;
+}
+.page2 .pers{
+
+    top: 85px;
+    /*border: 3px solid black;
+    */width: auto;
+    height: 675px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-bottom: none;
+}
+.page2 .pers .good{
+    border: 3px solid blue;
+    height: 300px;
+    width: 670px;
+    left: 50%;margin-left: -335px;
+    position: absolute;
+    text-align: center;
+    border-radius: 40px;
+}
+.page2 .pers .good p{
+    margin-top: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.page2 .pers .bad{
+    border: 3px solid blue;
+    height: auto;
+    float: left;
+    width: 670px;
+    left: 50%;margin-left: -335px;
+    top: 320px;
+    position: absolute;
+    text-align: center;
+    border-radius: 40px;
+}
+.page2 .pers .bad p{
+    margin-top: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.page2 .pers2{
+    border-top: none;
+    /*border: 3px solid black;*/
+   top: -40px;
+    width: auto;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.page2 .pers2 .content{
+    width: auto;
+    height: auto;
+    border: 3px solid green;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 40px;
+}
+.page2 .pers2 .content p{
+    margin-top: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.menu-icon {
+    display:none;
+  }
+  
+  
+.menu-list {
+    display: none; /* 초기에는 숨겨진 상태로 설정 */
+}
+
+
+/*
+.page2 .condition{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    top: 50%;left: 50%;
+    margin-left: -50px;margin-top: -25px;
+    border: 3px solid red;
+    border-radius: 30px;
+    top: 250px;
+}
+.page2 .condition h1{
+    text-align: center;
+    line-height: 50px;
+}
+.page2 .pers .con_circle1{
+    width: 300px;height: 300px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;left: 50%;
+    margin-top: -100px ;margin-left: -100px;
+    left: 200px;top: 200px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.page2 .pers .con_circle2{
+    width: 300px;height: 300px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;right: 50%;
+    margin-top: -100px ;margin-right: -100px;
+    right: 200px;top: 200px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.page2 .sub{
+    width: 500px;height: 300px;
+    background-color: gold;
+    position: absolute;
+    top: 50%;left: 50%;
+    margin-top: -150px ;margin-left: -250px;
+    top: 650px;
+    text-align: center;
+}*/
+
+
+
+/*세번째 페이지*/
+.page3{
+    width: auto;
+    height: 1000px;
+    background-color: antiquewhite;
+    color: black;
+    padding-top: 50px;
+}
+.page3 p{
+    font-size: 17px;
+    font-weight: bold;
+}
+.page3 .box{
+    top: 50px;
+    position: relative;
+    /*border: 3px solid black;*/
+    overflow-y: scroll;
+    width: auto;
+    height: 800px;
+    margin: 0 auto;
+    
+}
+.page3 .health{
+    width: 660px;
+    height: 300px;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border: 3px solid black;
+    margin-top: 10px;
+    border-radius: 25px 25px 0 0;
+}
+.page3 .health h2{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.page3 .first_section{
+    width: 660px;
+    height: 300px;
+    margin: 0 auto;
+    top: 30px;
+    position: relative;
+    border: 3px solid black;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.page3 .first_section h2{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.page3 .second_section{
+    width: 660px;
+    height: 250px;
+    margin: 0 auto;
+    top: 50px;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 25px 25px;
+}
+.page3 .second_section h2{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.page3 .third_section{
+    width: 660px;
+    height: 300px;
+    margin: 0 auto;
+    top: 70px;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 0 0 25px 25px;
+    
+}
+
+.page3 .third_section h2{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+/*footer*/
+.footer{
+    background-color: black;
+    bottom: 0;left: 0;right: 0;
+    width: auto;
+    height: 60px;
+}
+.footer .content{
+    width: auto; height: 70px;
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+}
+.footer .content p{
+    /*font-weight: bold;*/
+    font-size: 17px;
+    width: 799px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    line-height: 60px;
+}
