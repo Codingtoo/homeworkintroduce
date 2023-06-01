@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Introduce</title>
+
+    <!--<script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>-->
+    <!--스크린모드에서 가로길이가 최대 499px인 디바이스 장치-->
+    <link rel="stylesheet" href="/CSS/phone.css" media="screen and (max-width:494px)">
+    <!--스크린모드에서 가로길이가 최소 1051px인 디바이스 장치-->
+    <link rel="stylesheet" href="/CSS/homework.css"  media="screen and (min-width:1051px)">
+    <!--스크린모드에서 가로길이가 최소 500px 최대 1050px인 디바이스 장치-->
+    <link rel="stylesheet" href="/CSS/pad.css"  media="screen and (min-width:495px) and (max-width:1050px)">
+    <!--프린트모드이고 가로방향으로 출력-->
+    <link rel="stylesheet" href="./CSS/homework.css" media="print and (orientation:landscape)">
+    <!--프린트모드이고 세로방향으로 출력-->
+    <link rel="stylesheet" href="./CSS/print.css" media="print and (orientation:portrait)">
+    
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(window).on('resize', function() {
+            if ($(window).width() < 494) { // 변경하고자 하는 화면 너비를 지정합니다
+                    $('.menu-list').hide(); // 숨기고자 하는 목록의 선택자를 지정합니다
+                }         
+            else {
+      // 보이게 하고자 하는 목록의 선택자를 지정합니다
+                $('.menu-list').hide();
+}
+});
+
+        $(document).ready(function() {
+                $('.menu-icon').on('click',function() {
+                $('.menu-list').toggle();
+        });
+            $('menu-list').hide();
+            
+        });
+
+
+    window.onload=function(){
+        var lists=document.querySelectorAll('li')
+        lists[0].onclick=function(){
+        var anchors=document.querySelectorAll('a');
+        var anchor0=anchors[0].setAttribute("href","#home");
+        var anchor0=anchors[1].setAttribute("href","#page2");
+        var anchor0=anchors[2].setAttribute("href","#page3");}
+        lists[1].onclick=function(){
+        var anchors=document.querySelectorAll('a');
+        var anchor0=anchors[0].setAttribute("href","#home");
+        var anchor0=anchors[1].setAttribute("href","#page2");
+        var anchor0=anchors[2].setAttribute("href","#page3");
+        lists[2].onclick=function(){
+        var anchors=document.querySelectorAll('a');
+        var anchor0=anchors[0].setAttribute("href","#home");
+        var anchor0=anchors[1].setAttribute("href","#page2");
+        var anchor0=anchors[2].setAttribute("href","#page3");}
+
+    };
+    }
+    </script>
+    <!--view port-->
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,minimum-scale=1.0">
+</head>
+
+<body>
+    <div class="header">
+        <div class="headleft">Introduce</div>
+        <div class="headright">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">Abou&nbsp;Me</a></li>
+                <li><a href="#">Activity</a></li>
+            </ul>   
+        </div>
+
+
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="menu-list">
+            <li class="list"><a  href="#home">Home</a></li>
+            <li class="list"><a  href="#page2">AbouMe</a></li>
+            <li class="list"><a  href="#page3">Activity</a></li>
+        </ul>
+    </div>
+    
+    <div class="main" id="home">
+        <div class="main1">
+            <!--<h1 class="title">&lt;Choi Hee do&gt;</h1>-->
+            <img src="./homework.jpg" alt="사진">
+            <div class="introduce">
+                <h1>Choi Hee do</h1>
+                <p>&nbsp;&nbsp;Hello, my name is Heedo Choi. 
+                    I was born on December 11th, 2001 in Gangneung, Gangwon Province. 
+                    I graduated from high school in Gangneung and currently I am a sophomore at Kangwon National University in Chuncheon.
+                    <br>
+                   <!-- 나는 지금까지 스타벅스 홈페이지클론코딩과 계산기를 만드는 토이 프로젝트를 진행해봤습니다. 
+                    그리고 지금은 현장체험인턴쉽도 진행하고있습니다.
+                    이것은 아직 제가뭘하고싶은지 뭘 좋아하는지를 저 스스로도 잘 모르고있시때문에 여러 분야에서 경험을 해보고 제가 좋아하는것을 찾기위해 진행하고있습니다.
+                   -->
+                   &nbsp;&nbsp;I have worked on toy projects such as cloning the Starbucks website and creating a calculator. 
+                   Currently, I am also participating in an on-site experiential internship. 
+                   I am exploring various fields to discover my interests and passions because I am still unsure about what I want to do in the future.
+                   <!--저는 한가지에 몰두하는성격입니다. 뭐든 할 맘이있으면 무조건 1등은아니더라도 최선을 다해야한다고 생각하기때문입니다.
+                   이말의 정의되는것은 저는 몸이 약했었습니다. 하지만 어렸을때 어쩌다 시작한 운동에서 재미를 느껴 이분야로 제대로해보자 해서 해본결과 우승을 차지하는 뿌듯함을 겪으며 더욱 모든분야에서 포기하지 않겠다는 생각이 더 커졌습니다.-->
+                   I am a person who tends to focus on one thing. Whenever I have the desire to do something, I believe that I must do my best, even if I am not always the best. This belief was formed because I used to have a weak body. However, when I started exercising as a child and found it enjoyable, I decided to pursue this field and eventually experienced the pride of winning. This made me more determined to never give up in any field.
+                    </p>
+            </div>
+        </div>
+        <div class="introduce2">
+            <p>&nbsp;&nbsp;I have been introverted since I was young.
+                I always talked to my close friend, but this point was fixed after I started exercising.
+                <!-- 저는 어렸을때부터 내성적이였습니다.  -->
+                <!-- 친한친구한테도 항상 눈치보며 말걸었었는데 이러한점이 고쳐진 시점이 운동을 시작한후였습니다.  -->
+                <br>I used to do weight lifting and flying disc, but I didn't give up and continued to compete, so I couldn't even lift a stick at first, but I won first place in my first competition.
+                <!-- <br>저는 역도,플라잉디스크를 했었었는데 몸이 말랐었기때문에 내가 무슨 역도야라는 생각을 했지만 포기하지않고 대회까지 꾸준히 하니까 처음에는 봉도 들지 못했는데 점점 더 많은 무게를 들수있게되며 첫 대회에서 1등을 하게되었습니다.  -->
+                I felt that my body got better while exercising and that my feelings of more confidence and intimidation were reduced because everyone around me cheered for me.
+                <!-- 운동을 하며 몸도 좋아지고 주위사람들이 모두 응원을 해주기때문에 더 자신감이 생기고 주눅드는 심정들이 많이 줄어들었다는걸 느꼈습니다.  -->
+                <br>&nbsp;&nbsp;Like this, the time of limitation is bound to come in all fields, but I think that if you overcome that time, you will get better results, so I think this will work better in computer science, which is my major.
+                <!-- 이처럼 모든 분야에서 한계의 시점이 오기 마련이지만 그 시점만 뛰어넘으면 더 좋은 결과가 나오기 마련이라 생각하기 때문에 제 전공인 컴퓨터공학에서도 이러한점이 더 좋게 작용할거라고 생각합니다.  
+                -->
+                The biggest thing I felt from many experiences is that I feel that I can do it if I don't give up until the end, so I won't give up in the future.
+                <!-- 여러가지 많은 경험들로 가장크게 느낀점은 끝까지 포기하지 않으면 할수있다는것을 느껴 앞으로도 포기하지 않을겁니다. -->
+            </p> 
+        </div>
+        
+        <div class="button">
+            <a href="#page3">MORE</a>
+        </div>
+    </div>
+    <!--두번째 페이지-->
+    <div class="page2" id="page2">
+        <div class="pers">
+            <div class="good">
+                <h1>좋아하는 것</h1>
+                <p>&nbsp;&nbsp;&nbsp;저는 어렸을때부터 가만히 앉아서 하는 활동보다 직접 움직이고 활발한 활동들을 하는것을 더 좋아했는데요. 
+                    그중에서 가장 재미있어하고 좋아하는것은 육상과 다같이 함께 할수있는 축구를 제일 좋하했어요. 
+                    운동을 좋아하는이유는 소심했던 성격이 가장큰 이유인데요.
+                    다 같이하면 서로 응원해주며 자신감도 많아지고 더 활발해지며 성격이 밝아지는것을 느껴 혼자하는 운동보다는 여러명과 함께하는것을 좋아합니다. 
+                    좋하하는 음식은 피자나 치킨과같은 인스턴트 음식들을 좋아합니다. 가끔은 집 앞 바닷가나 산 꼭대기에 올라가 앞에 보이는 끝이없는 풍경을 보며 시간을 보내기도합니다. 
+                    집에 있는 것보다 밖에 나가서 운동이나 드라이브 혹은 새로운 사람들을 만나는것을 좋아합니다.
+
+                </p>
+            </div>
+            <div class="bad">
+                <h1>싫어하는 것</h1>
+                <p>&nbsp;&nbsp;&nbsp;저는 한자리에 오랫동안  앉아서 하는것을 지루해하는 편입니다.
+                    할것이 정해져있으면 하지만 해야할것없이 앉아서 계속 대기만 하는것은 무의하다고 생각해서 별로라고 생각합니다. 
+                    제가 가장 싫어하는 음식은 야채입니다. 그 이유는 식감이 제일 별로라서 그렇고 두번째는 맛이 없습니다.
+                    저는 비오는 날에 옷이 젖는것과 길에서 비오는 날에만 나는 냄새를 싫어하기 때문에 비온는 날을 싫어합니다.
+                    특히 아침부터 오는날에는 무기력해지고 아침부터 기분이 꿀꿀하게 시작합니다.  
+                    
+                </p>
+            </div>
+            
+            <!--
+            <div class="condition">
+                <h1>성격</h1>
+            </div>
+
+            <div class="con_circle1">
+                <h1>장점</h1>
+            </div>
+
+            <div class="con_circle2">
+                <h1>단점</h1>
+            </div>-->
+        </div>
+        <div class="pers2">
+            <div class="content">
+                <h1>&lt;성격의 단점 및 장점&gt;</h1>
+                <p>
+                    &nbsp;&nbsp;&nbsp;제가 생각하는 저의 성격에 대한 단점은 가장큰 문제는 낯을 많이 가린다는 것입니다.   
+                    얼마나 많이 가리나면 아무리 친해도 저의 안좋은일은 항상 숨기고 아무일 없는 듯이 다닌다는 것입니다.
+                    하지만 저는 상대방에 대해 모든것을 알고싶어하며 상대방과 관련된 일이 있으면 먼저 알려준다는 것입니다.
+                    성격이 꼼꼼해서 미리미리해놓아도 계속 확인하고 주변사람들까지 신경쓰기때문에 오지랖을 많이 불립니다. 
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;제가 생각하는 저의 성격에 대한 장점은 밝은 것과 꼼꼼하다는 것입니다.
+                    항상 밝게 다녀서 주변친구들은 저랑있으면 항상 분위기가 밝다고말해줍니다. 
+                    저는 해야 할 모든 일을 계획하며 미리미리 해놓지 않으면 불안하기 합니다.
+                    꼼꼼한 점은 꼼꼼하지 않아 모든일에 사소한 실수를 항상 만드는것보다 훨씬 좋은 장점이라고 생각합니다. 
+                    소심함과 꼼꼼한점이 합쳐져서 침착합이 되는것 같습니다. 생각하지 못한일이 발생했을때 당황도 물론 하지만 그 상황들 해결하는것이 우선이라고 생각하기때문에
+                    차분히 해결하려고 노력합니다. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--세번째페이지-->
+    <div class="page3" id="page3" style="background-attachment: scroll;">
+        <div class="box">
+            <div class="health">
+                <h2>&lt;역도&gt;</h2>
+                <br>
+                <p>&nbsp;&nbsp;공부보다는 마냥 뛰어놀기를 좋아했었는데 이러한 성향을 알고 선생님의 추천으로 시작하게되었습니다.
+                    처음에는 몸도 작기때문에 되겠어?라는 소리와 생각과 걱정을 많이 가졌었는데 실제로 처음에는 봉하나도 들지 못했었습니다.&nbsp;다른 친구들은 처음부터 봉으로 시작할때
+                    저는 나무 막대기로 자세 연습부터 시작하며 매일아침 가장먼저 와서 연습을 시작했습니다. &nbsp;어느날 15kg봉이아닌 5kg봉으로 연습을 시작했습니다. &nbsp;이것도 무거웠습니다,하지만 같은 봉으로 3~4일 연습하니까 느낌이 나무 막대기드는 느낌이나서 10kg봉을
+                    들어보고 마침내15kg봉을 들을수있었는데 저는 이제 시작이였습니다.  
+                </p>
+                <p>&nbsp;&nbsp;여기서 중요한건 모든것을 포기하지않고 끝까지 한다면 못할건 없다는걸 깨달았습니다. 
+                    결과적으로 마지막에는 제 체급에서 1등을 달성했습니다. 이 경험으로 느낀 경험은 앞으로도 계속생각하며 힘들때마다 포기하지않고 해 나아갈것입니다.
+                </p>
+            </div>
+            <div class="first_section">
+                <h2>&lt;스타벅스 홈페이지 클론코딩&gt;</h2>
+                <br>
+                <p> &nbsp;&nbsp;스타벅스 홈페이지 클론코딩은 제가 웹페이지에 관심을 가지게되며 시작하게된 첫번째 프로젝트입니다.
+                    css에서 가장 어려웠 던점은 position위치와 정렬이 가장 어려웠습니다. 이러한 부분에서 햇갈릴때마다 저의 해결방법은 직접 여러가지 방법으로 시도해보는것이였습니다.
+                    홈페이지는 사용자들이 가장많이 보이는 부분이기 때문에 요소의 위치가 엄청중요하다고 생각하기때문에 그 부분을 가장 중요하게 생각하며 위치를 구성한거같습니다.
+                    <br>&nbsp;&nbsp;javascript에서는 처음에는 거의 대부분의 부분이 이해 안갔지만 일단따라하면서  이해가 가지 않는 부분들을 찾아보며 해보니까 왜 이런식으로 했는지 이해가갔습니다.  
+                    홈페이지 클론코딩을 하면서 하나의 홈페이지를 만드는데도 엄청난 태그,css,시간이 걸린며 사소한것 하나하나를 신경쓰며 만들어야한다는걸 느꼈습니다.
+                </p>
+            </div>
+            <div class="second_section">
+                <h2>&lt;계산기 만들기(토이 프로젝트)&gt;</h2>
+                <br>
+                <p> &nbsp;&nbsp;계산기 만들기는 제가 가장 처음으로한 스스로 만든 계산기입니다. 시작할때는 position만 잘 조절하면 쉽게 만들수있겠다 생각하며 시작했지만 
+                    실제로 해보니 position의 위치만 잘 조절한다고 해서 만들어지지 않았습니다. 가장 중요한 연산의 기능을 넣어야했는데 이과정에서 js코드도 html에 넣을수있다는걸 알았으며 
+                    연산기능을 찾아 넣어 진행하여 그렇게 제 첫번째 계산기를 만들어봤습니다. 
+                </p>
+                <p>&nbsp;&nbsp;클론코딩과는 다르게 제가 스스로 만들었다고 생각하니까 더 뿌듯하고 재미를 느끼게 되는 것 같습니다.
+                    더 많은 생각을 하며 만들고 어떤식으로 더 간단하게 만들 수 있을지 이러한 생각이 더 나아가게 만들어준 것 같습니다. 
+                </p>
+            </div>
+            <div class="third_section">
+                <h2>&lt;현장 체험 인턴쉽&gt;</h2>
+                <br>
+                <p>&nbsp;&nbsp;이전까지는 혼자 해보며 혼자 다 알아서 하는 프로젝트를 가졌었습니다. 2023년 5월달에 시작한 현장체험형인턴쉽은 혼자알아서가 아니라 
+                    배우면서 어려웠던부분이나 햇갈리는부분, 모르는 부분에대해 물어볼수있는 분이계셔서 확실히 혼자 할때보다는 진행이 더 부드러웠던 것 같습니다.
+                    이활동은 딥러닝을 이용한 자연어처리를 하는 활동인데요. 활동을 하며 챗gpt를 처음써봤습니다.
+                    처음 사용해본 언어인 파이썬을 이용해 API를 연결하여 chat.api기능을 활용해 보았습니다.
+                    <br>&nbsp;&nbsp;또 처음 해본 인턴쉽을 하며 새로운 경험과 여러생각들이 더 많이 드는 경험이였던것 같습니다.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="content">
+                <p class="first">010-8786-9838 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    tongki2001@naver.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;github : <a href="https://github.com/Codingtoo?tab=repositories">github.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
